@@ -1,6 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Rosario:400,400italic,700,700italic);
 body {
-  font: 18px/1.3em "Rosario", Verdana, sans-serif;
+  font: Arial, Verdana, sans-serif;
   background: #641212;
   font-weight: 400;
   padding: 0;
@@ -219,7 +218,7 @@ body.three-d div.slides {
 
 /* Content */
 header {
-  font-family: "Sorts Mill Goudy", URW Palladio, Pallatino, FreeSerif, Times New Roman, serif; }
+  font-family: FreeSerif, Times New Roman, serif; }
   header:not(:only-child) {
     font-weight: 700;
     font-size: 60px;
@@ -264,9 +263,7 @@ section img.align-left {
 a {
   color: inherit;
   display: inline-block;
-  text-decoration: none;
-  line-height: 110%;
-  border-bottom: 2px solid #3f3f3f; }
+  line-height: 110%; }
 
 pre {
   font-size: 20px;

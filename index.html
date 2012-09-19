@@ -25,7 +25,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Detailed Look into the Internet: Behind the Scenes of Your Browser</title>
+    <title>Git</title>
     <!-- Styles -->
     
     <link rel="stylesheet" media="print" href="osu-theme/css/print.css">
@@ -53,7 +53,7 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Detailed Look into the Internet: Behind the Scenes of Your Browser</h1></header>
+            <header><h1>Git</h1></header>
             
             
           </div>
@@ -70,7 +70,7 @@
             </aside>
             
             <aside class="page_number">
-              1/22
+              1/5
             </aside>
           </footer>
         </div>
@@ -81,10 +81,12 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Your Browser</h2></header>
+            <header><h2>Github first.</h2></header>
             
             
-            <section><p><img alt="Empty" src="blank_browser.png" /></p></section>
+            <section><p><img src="http://octodex.github.com/images/repo.jpg"
+     style="max-height: 400px;" /></p>
+<p><a href="https://github.com/signup/free">https://github.com/signup/free</a></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -100,7 +102,7 @@
             </aside>
             
             <aside class="page_number">
-              2/22
+              2/5
             </aside>
           </footer>
         </div>
@@ -111,10 +113,15 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>How Does It Work?</h2></header>
+            <header><h2>SSH Keys</h2></header>
             
             
-            <section><p><img alt="Complex" src="complex_browser.png" /></p></section>
+            <section><p>Although this is not strictly necessary you'll want to do this because:</p>
+<ul>
+<li>It is more secure</li>
+<li>It's easy to use once set up.</li>
+</ul>
+<p><a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -130,7 +137,7 @@
             </aside>
             
             <aside class="page_number">
-              3/22
+              3/5
             </aside>
           </footer>
         </div>
@@ -141,19 +148,17 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Spiraling Plan</h2></header>
+            <header><h2>Now it's Git time</h2></header>
             
             
             <section><ul>
-<li>What You Need to Know as a Web Developer</li>
-<li>Vocabulary:<ul>
-<li>Page Markup</li>
-<li>Clients and Servers</li>
-<li>Requests and Responses</li>
+<li>Initilize a local Git repository<ul>
+<li>Make your first commit! <a href="https://github.com/blog/926-shiny-new-commit-styles">https://github.com/blog/926-shiny-new-commit-styles</a></li>
 </ul>
 </li>
-<li>Detailed Look at Your Browser</li>
-<li>Detailed Look at the Server</li>
+<li>Create a repository on github
+    <a href="https://github.com/new">https://github.com/new</a></li>
+<li>Push</li>
 </ul></section>
             
           </div>
@@ -170,7 +175,7 @@
             </aside>
             
             <aside class="page_number">
-              4/22
+              4/5
             </aside>
           </footer>
         </div>
@@ -181,47 +186,31 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Vocabulary</h2></header>
+            <header><h2>Good Commit Messages</h2></header>
             
             
-            <section><ul>
-<li>Language we all agree on.</li>
-<li>Complex topic that requires some lingo.</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              5/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>What You Need to Know as a Web Developer</h2></header>
-            
-            
-            <section><ul>
-<li>Page Markup</li>
-<li>Client-Server</li>
-<li>Request-Response</li>
-</ul></section>
+            <section><pre><code>Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+characters or so.  In some contexts, the first line is treated as the
+subject of an email and the rest of the text as the body.  The blank
+line separating the summary from the body is critical (unless you omit
+the body entirely); tools like rebase can get confused if you run the
+two together.
+
+Write your commit message in the present tense: "Fix bug" and not "Fixed
+bug."  This convention matches up with commit messages generated by
+commands like git merge and git revert.
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+
+- Typically a hyphen or asterisk is used for the bullet, preceded by a
+  single space, with blank lines in between, but conventions vary here
+
+- Use a hanging indent
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -237,654 +226,7 @@
             </aside>
             
             <aside class="page_number">
-              6/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Page Markup</h2></header>
-            
-            
-            <section><ul>
-<li>Content: HTML<ul>
-<li>Page structure and content.</li>
-</ul>
-</li>
-<li>Presentation: CSS<ul>
-<li>How it looks</li>
-</ul>
-</li>
-<li>Interaction: Javascript<ul>
-<li>Change things!</li>
-</ul>
-</li>
-<li>"Front End"</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              7/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Clients and Servers</h2></header>
-            
-            
-            <section><ul>
-<li>Website with many users</li>
-<li>1 server - many clients</li>
-<li>Content can change per client</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              8/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Requests and Responses</h2></header>
-            
-            
-            <section><ul>
-<li>How does your browser (client) communicate with the website (server)?</li>
-<li>Browser asks for a resource from the server<ul>
-<li>http://www.example.com/about.html
-  Host: www.example.com
-  GET /about.html HTTP/1.1</li>
-</ul>
-</li>
-<li>Server sends a response<ul>
-<li>200 OK</li>
-<li>304 Not Modified</li>
-<li>404 Not Found</li>
-<li>500 Server Error</li>
-<li>HTML/image/whatever</li>
-</ul>
-</li>
-<li>Browser then sends more requests for images, stylesheets, javascript, etc.</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              9/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Browser Specifics</h2></header>
-            
-            
-            <section><ul>
-<li>Diving Deeper, this time on your machine.</li>
-<li>I have a page. Where does my browser begin?</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              10/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>What, Not How</h2></header>
-            
-            
-            <section><ul>
-<li>Declarative, not Instructive</li>
-<li>
-<p>Java/C/etc. says "do this, then this"</p>
-<pre><code>document.drawString("Welcome to Example.com", myfont, size, ...)
-</code></pre>
-</li>
-<li>
-<p>HTML says "this needs to be displayed, the browser can work it out"</p>
-</li>
-<li>Takes the "plan" and figures out which pixels to turn on.</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              11/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Structure of the Page: HTML</h2></header>
-            
-            
-            <section><ul>
-<li>Hypertext Markup Language</li>
-<li>
-<p>Tags with content and attributes</p>
-<pre><code>&lt;h1 id="logo"&gt;CWDG&lt;/h1&gt;
-</code></pre>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              12/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Turtles All The Way Down</h2></header>
-            
-            
-            <section><ul>
-<li>
-<p>Tags Nested within Tags</p>
-<pre><code>&lt;div id="container"&gt;
-  &lt;div id="content"&gt;
-    &lt;div class="section about"&gt;
-      &lt;h2&gt;What is CWDG?&lt;/h2&gt;
-      &lt;div class="content"&gt;
-        &lt;p&gt;
-          We are a collection of students, graduates and alumni at the Ohio
-          State University who are making an effort to improve the web. We
-          work hard to make ourselves, and others, better developers.
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              13/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Style of the Page: CSS</h2></header>
-            
-            
-            <section><ul>
-<li>Cascading Style Sheets</li>
-<li>Assign visual properties to elements.</li>
-<li>Browser still decides <em>how</em> to display it.</li>
-<li>
-<p>Syntax tied to the "id" and "class" attributes.</p>
-<pre><code>/* This is a comment */
-#container { /* This is a rule */
-  width: 960px; /* This is a CSS declaration */
-  /* property     : value */
-  background-color: white;
-}
-/* selector */
-.section { border: 1px solid #ccc; background-color: #eee; }
-p { font-size: 16px; color: #224; }
-</code></pre>
-</li>
-<li>
-<p>Several ways to make a selector: <code>tag #id .class</code></p>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              14/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>More Turtles</h2></header>
-            
-            
-            <section><ul>
-<li>
-<p>Assign properties to elements nested within others.</p>
-<pre><code>.section h2 {
-  font-weight: bold;
-}
-</code></pre>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              15/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Interaction on the Page: Javascript</h2></header>
-            
-            
-            <section><ul>
-<li>Normal language that interacts with the HTML and CSS.</li>
-<li>Runs "in the browser"</li>
-<li>
-<p>Similar to Java, but really more like Scheme</p>
-<pre><code>footer = document.findElementById("footer");
-footer.textContent;
-=&gt; "Email cwdgosu@gmail.com for more information."
-footer.onclick = function(){ alert("Clicked the footer!"); };
-</code></pre>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              16/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Servers</h2></header>
-            
-            
-            <section><ul>
-<li>Diving Deeper, this time on the Server!</li>
-<li>Recieved a request. What now?</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              17/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Routing</h2></header>
-            
-            
-            <section><ul>
-<li>What piece of my server application cares about your request?<ul>
-<li>ex. example.com/sign_in =&gt; User Sign In</li>
-<li>ex. example.com/profiles/1382 =&gt; User #1382's Profile</li>
-</ul>
-</li>
-<li>Examine the requested resource to determine this.<ul>
-<li>/profiles/1382<ul>
-<li>This request is for a profile. Send to ProfileController</li>
-<li>This request is specifically for 1382. Parameter.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              18/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Controllers</h2></header>
-            
-            
-            <section><ul>
-<li>Application Logic<ul>
-<li>What article are they trying to read?</li>
-<li>Is the user logged in?</li>
-<li>Can that user read that article?</li>
-<li>What articles are considered related?</li>
-</ul>
-</li>
-<li>Often uses information from the database to make decisions.</li>
-<li>Picks who should take care of rendering the page.</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              19/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Databases</h2></header>
-            
-            
-            <section><ul>
-<li>Usernames, User Ids, Passwords, Last Login Time</li>
-<li>Post Titles, Post Content, Authors, Comments</li>
-<li>
-<p>Prices, Account Numbers, etc</p>
-</li>
-<li>
-<p>All stored in a database somewhere.</p>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              20/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Templates</h2></header>
-            
-            
-            <section><ul>
-<li>Special HTML files which insert special content.<ul>
-<li>Processed by Web Framework. Mix of code and HTML.</li>
-</ul>
-</li>
-<li>Split the logic for each page up. Only worry about a little at a time.</li>
-<li>
-<p>ex.</p>
-<pre><code>&lt;div class="author"&gt;&lt;%= @post.author %&gt;&lt;/div&gt;
-</code></pre>
-</li>
-<li>
-<p>Use multiple files.</p>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              21/22
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h2>Thanks!</h2></header>
-            
-            
-            <section><ul>
-<li>Alex Burkhart <em>(@Saterus)</em></li>
-<li>Ryan McGowna <em>(@Ryan_VM)</em></li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              22/22
+              5/5
             </aside>
           </footer>
         </div>
@@ -899,114 +241,29 @@ footer.onclick = function(){ alert("Clicked the footer!"); };
       <caption>Table of Contents</caption>
       
       <tr id="toc-row-1">
-        <th><a href="#slide1">Detailed Look into the Internet: Behind the Scenes of Your Browser</a></th>
+        <th><a href="#slide1">Git</a></th>
         <td><a href="#slide1">1</a></td>
       </tr>
       
         
         <tr id="toc-row-2" class="sub">
-          <th><a href="#slide2">Your Browser</a></th>
+          <th><a href="#slide2">Github first.</a></th>
           <td><a href="#slide2">2</a></td>
         </tr>
         
         <tr id="toc-row-3" class="sub">
-          <th><a href="#slide3">How Does It Work?</a></th>
+          <th><a href="#slide3">SSH Keys</a></th>
           <td><a href="#slide3">3</a></td>
         </tr>
         
         <tr id="toc-row-4" class="sub">
-          <th><a href="#slide4">Spiraling Plan</a></th>
+          <th><a href="#slide4">Now it's Git time</a></th>
           <td><a href="#slide4">4</a></td>
         </tr>
         
         <tr id="toc-row-5" class="sub">
-          <th><a href="#slide5">Vocabulary</a></th>
+          <th><a href="#slide5">Good Commit Messages</a></th>
           <td><a href="#slide5">5</a></td>
-        </tr>
-        
-        <tr id="toc-row-6" class="sub">
-          <th><a href="#slide6">What You Need to Know as a Web Developer</a></th>
-          <td><a href="#slide6">6</a></td>
-        </tr>
-        
-        <tr id="toc-row-7" class="sub">
-          <th><a href="#slide7">Page Markup</a></th>
-          <td><a href="#slide7">7</a></td>
-        </tr>
-        
-        <tr id="toc-row-8" class="sub">
-          <th><a href="#slide8">Clients and Servers</a></th>
-          <td><a href="#slide8">8</a></td>
-        </tr>
-        
-        <tr id="toc-row-9" class="sub">
-          <th><a href="#slide9">Requests and Responses</a></th>
-          <td><a href="#slide9">9</a></td>
-        </tr>
-        
-        <tr id="toc-row-10" class="sub">
-          <th><a href="#slide10">Browser Specifics</a></th>
-          <td><a href="#slide10">10</a></td>
-        </tr>
-        
-        <tr id="toc-row-11" class="sub">
-          <th><a href="#slide11">What, Not How</a></th>
-          <td><a href="#slide11">11</a></td>
-        </tr>
-        
-        <tr id="toc-row-12" class="sub">
-          <th><a href="#slide12">Structure of the Page: HTML</a></th>
-          <td><a href="#slide12">12</a></td>
-        </tr>
-        
-        <tr id="toc-row-13" class="sub">
-          <th><a href="#slide13">Turtles All The Way Down</a></th>
-          <td><a href="#slide13">13</a></td>
-        </tr>
-        
-        <tr id="toc-row-14" class="sub">
-          <th><a href="#slide14">Style of the Page: CSS</a></th>
-          <td><a href="#slide14">14</a></td>
-        </tr>
-        
-        <tr id="toc-row-15" class="sub">
-          <th><a href="#slide15">More Turtles</a></th>
-          <td><a href="#slide15">15</a></td>
-        </tr>
-        
-        <tr id="toc-row-16" class="sub">
-          <th><a href="#slide16">Interaction on the Page: Javascript</a></th>
-          <td><a href="#slide16">16</a></td>
-        </tr>
-        
-        <tr id="toc-row-17" class="sub">
-          <th><a href="#slide17">Servers</a></th>
-          <td><a href="#slide17">17</a></td>
-        </tr>
-        
-        <tr id="toc-row-18" class="sub">
-          <th><a href="#slide18">Routing</a></th>
-          <td><a href="#slide18">18</a></td>
-        </tr>
-        
-        <tr id="toc-row-19" class="sub">
-          <th><a href="#slide19">Controllers</a></th>
-          <td><a href="#slide19">19</a></td>
-        </tr>
-        
-        <tr id="toc-row-20" class="sub">
-          <th><a href="#slide20">Databases</a></th>
-          <td><a href="#slide20">20</a></td>
-        </tr>
-        
-        <tr id="toc-row-21" class="sub">
-          <th><a href="#slide21">Templates</a></th>
-          <td><a href="#slide21">21</a></td>
-        </tr>
-        
-        <tr id="toc-row-22" class="sub">
-          <th><a href="#slide22">Thanks!</a></th>
-          <td><a href="#slide22">22</a></td>
         </tr>
         
       
